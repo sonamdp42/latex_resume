@@ -1,0 +1,331 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames]{color}
+\usepackage{color,hyperref}
+\usepackage{ragged2e}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+            
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=-0.25in
+\textheight=9.25in
+
+%\renewcommand{\familydefault}{\rmdefault}
+
+\raggedright
+
+\pagenumbering{arabic}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\scshape{#1}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[4]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\begin{center}
+			{\Large \scshape {#1}}\\ \smallskip
+			{#2}\\ \smallskip 
+			{#3}\\ \smallskip
+			{#4}\smallskip
+		\end{center}
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }	
+	{\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\ 
+	#4\\
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name
+\contact{Sonam Mandal}{sonam.dp42@gmail.com/somandal@cs.stonybrook.edu}{1-(408)-819-8107}{http://www.fsl.cs.sunysb.edu/\textasciitilde sonam/}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Objective
+\header{Objective}
+
+\begin{body}
+	\vspace{14pt}
+	To obtain an internship in a research or development role in the field of Systems.\\
+\end{body}
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Research Interests
+%\header{Interests}
+
+%\begin{body}
+%	\vspace{14pt}
+%	File Systems, Storage, Operating Systems\\
+%\end{body}
+
+%\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\header{Education}
+
+\begin{body}
+	\vspace{14pt}
+		\textbf{Ph.D. Computer Science} \hfill \emph{August 2014 - present} \\
+%		\smallskip
+	\href{https://www.cs.stonybrook.edu/home}{\emph{Stony Brook University}}, Stony Brook, NY \hfill \emph{GPA 3.79/4.00}\\
+\end{body}
+
+\begin{body}
+	\vspace{14pt}
+		\textbf{M.S. Computer Science} \hfill \emph{August 2012 - May 2014} \\
+%		\smallskip
+	\href{https://www.cs.stonybrook.edu/home}{\emph{Stony Brook University}}, Stony Brook, NY \hfill \emph{GPA 3.79/4.00}\\
+\end{body}
+
+\begin{body}
+	\vspace{14pt}
+		\textbf{B.Tech. Computer Science \& Engineering} \hfill \emph{July 2005 - May 2009} \\
+%		\smallskip
+	\href{http://www.mnnit.ac.in/}{\emph{Motilal Nehru National Institute of Technology}}, Allahabad, India \hfill \emph{GPA 7.94/10.00}\\
+\end{body}
+
+\begin{changemargin}{-0.5in}{-0.5in}
+  	\lineover
+\end{changemargin}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Graduate Coursework:} Operating Systems, Advanced Operating Systems, Compiler Design, Computer Architecture, Network Programming, Network Security, Advanced Computer Security, Analysis of Algorithms, Computational Biology, Computational Geometry, Natural Language Processing, Theory of Computation*.\\
+%	\smallskip
+%	\textbf{Current Graduate Coursework:}  Theory of Computation.\\
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+\header{Technical Skills}
+
+\begin{body}
+	\vspace{14pt}
+	\emph{\textbf{Programming:}}{} C (6+yrs), C++ (2+yrs), Java (2+yrs)\\
+%	\medskip
+	\emph{\textbf{Scripting:}}{} Unix Shell Scripting (6+yrs), Python (1+yrs)\\
+%	\medskip
+	\emph{\textbf{Tools and Software:}}{} gdb, git, cvs, mercurial, vim, blktrace, filebench, wireshark\\
+%	\medskip
+%	\emph{\textbf{Version Control Tools:}}{} Git, cvs, mercurial\\
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Research Experience
+\header{Research Experience}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Research Assistant, \emph{File Systems and Storage Lab (FSL)} \hfill \emph{June 2013 - present}}\\
+	\textbf{Advisor: Professor Erez Zadok}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item \textbf{Versatile Semantically Aware Deduplication Block Device:} Developed a stackable device mapper kernel module for deduplication at the block layer in the Linux Kernel with support for various metadata backends. Implemented
+an in-RAM and a persistent metadata backend.
+		\item \textbf{Semantically Aware File Distribution Insights for Distributed Deduplication:} Performed dataset analysis on traces from Linux and Mac OS to obtain insights about intra-file and inter-file type deduplication. Developed a file distribution application to route files based on file semantic information.
+	\end{itemize}
+\end{body}
+
+\smallskip	
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Professional Experience
+\header{Professional Experience}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf {Engineering Intern (DS-CASL), \emph{Nimble Storage, San Jose, CA} \hfill \emph{May 2014 - August 2014}}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt
+		\item \textbf{Internal Data Structure Compression:} Designed and implemented an in-memory custom compression technique in C++ to compress a critical data structure so that it takes less memory and flash.
+		\item \textbf{STL Custom Allocator:} Developed a C++ STL Allocator which uses custom memory pools to allocate STL objects to facilitate memory usage tracking and control. This prevents STL Objects from taking up too much memory and reduces memory fragmentation in the system
+		.
+	\end{itemize}
+	
+	\textbf{Software Engineer, \emph{Motorola Mobility, Hyderabad, India} \hfill \emph{March 2010 - August 2012}}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item \textbf{Gnome Keyring Certificate Manager:} Developed a Certificate Manager in C using APIs exposed by Gnome Keyring with the help of OpenSSL and GNUTLS cryptographic libraries.
+		\item \textbf{Digital Living Network Alliance (DLNA) Compliance:} Developed a DLNA media server in C to host media in a mobile device. Developed a DLNA media player application in Javascript and HTML5 to play media hosted on other DLNA compliant devices.
+%		\item \textbf{Email Application and Web-service:} Worked on enhancing the performance of the email web service to enable full-duplex communication between the email application and the open source Tinymail framework.
+	\end{itemize}
+
+	\textbf {Software Engineer, \emph{Azingo Soft, Hyderabad, India} \hfill \emph{July 2009 - March 2010}}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt
+		\item \textbf{Vodafone Location Application:} Worked on developing a C++ and GTK based mobile location (maps) application for Vodafone.
+	\end{itemize}
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Publications
+\header{Publications}
+
+\begin{body}
+	\vspace{14pt}
+	Vasily Tarasov, Deepak Jain, Geoff Kuenning, Sonam Mandal, Karthikeyani Palanisami, Philip Shilane, Sagar Trehan, Erez Zadok. ``\href{http://www.fsl.cs.sunysb.edu/docs/ols-dmdedup/dmdedup-ols14.pdf}{\textbf{Dmdedup: Device Mapper Target for Data Deduplication}},'' in \href{http://www.linuxsymposium.org/2014/}{\emph{Linux Symposium}} 2014.\\
+	\smallskip
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Academic Projects
+\header{Academic Projects}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Stony Brook University \hfill \emph{August 2012 - present}}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt
+		\item \href{https://bitbucket.org/sonamdp42/babelfish}{\textbf{Babelfish: Processor Core for x86-64 bit ISA:}} Implemented an x86-64 simulator to simulate an in-order 7-stage pipeline processor with a 2-way set-associative cache. \textbf{Language:} SystemVerilog, C++\\
+		\item \href{https://github.com/arunov/dory}{\textbf{E-- Compiler:}} Built a lexical analyzer using Flex and built a parser using Bison for the E-- Language. We created abstract syntax trees, and performed type checking, memory allocation, and code generation. \textbf{Language:} C++\\
+		\item \textbf{Stackable Integrity Checking and Encryption File System (Linux 3.2.2 Kernel):} Built an integrity checking file system and an encryption file system on top of a null stackable file system, Wrapfs, in the Linux 3.2.2 Kernel. Added extended attribute support for the integrity checking file system. Implemented address space operations to support storing encrypted data in the encryption file system while showing authorized users decrypted data. \textbf{Language:} C (Kernel Programming)\\
+		\item \textbf{On-Demand Shortest Hop Routing Protocol:} Implemented an on-demand shortest hop routing protocol for wired networks based on the AODV routing protocol. It was implemented using PF\textunderscore PACKET sockets to facilitate direct communication with the data-link layer. \textbf{Language:} C (Socket Programming)\\
+		\item \textbf{Reliable UDP File Transfer:} Implemented a reliable UDP file transfer application by applying TCP concepts like flow control (sliding window), reliability (timeout mechanism, fast retransmit), and simple congestion control (slow start, congestion avoidance, and fast recovery). \textbf{Language:} C (Socket Programming)\\
+%		\item \textbf{Content Security Policy Script Nonce Apache Module:} Implemented the Content Security Policy Script Nonce feature as an Apache Module to help reduce persistent and non-persistent cross site scripting attacks over the web. A random nonce is inserted within all script tags having a sever administrator specified default nonce value. Tested with Chrome Browser version 28. \textbf{Language:} C\\
+		\item \textbf{Art Gallery Problem: Guards and Witnesses for Discrete Set of Points in a Polygon:} Developed an applet to find a small number of guard points and large number of witness points for a discrete set of points within a given polygon using greedy heuristics. \textbf{Language:} Java\\
+%		\item \textbf{Bio-informatics Analysis of Coevolution between tmRNA and SmpB:} Implemented an algorithm for finding the coevolution between two sets of sequences using mutual information calculation method. In bacteria, regions of high coevolution were determined between tmRNA and a protein SmpB. \textbf{Language:} Java\\
+	\end{itemize}
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Personal Details
+\header{Personal Details}
+
+\begin{body}
+	\vspace{14pt}
+%	\begin{itemize}
+	\textbf{\emph{Citizenship:}} United States of America\\
+%	\medskip 
+%	\textbf{\emph{Languages Spoken:}} English, Hindi\\
+%	\medskip
+	\textbf{\emph{Address:}} Chapin E 2084By, 700 Health Science Drive, Stony Brook, NY 11790\\
+%	\medskip
+	\textbf{\emph{Hobbies \& Interests:}} Photography [\href{http://500px.com/deadpoet88/}{500px}, \href{http://www.flickr.com/photos/deadpoet_42/}{Flickr}], writing poetry, reading\\
+%	\end{itemize}
+
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Achievements
+%\header{Achievements}
+
+%\begin{body}
+%	\vspace{14pt}
+%	\begin{itemize}
+%	\item blah blah blah\\
+%	\medskip 
+%	\item blah blah\\
+%	\medskip
+%	\item blah blah blah blah\\
+%	\medskip
+%	\item blah\\
+%	\medskip
+%	\item blah blah blah blah blah\\
+%	\end{itemize}
+
+%\end{body}
+
+%\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Extracurricular Activities
+%\header{Extracurricular Activities}
+
+%\begin{body}
+%	\vspace{14pt}
+%	\begin{itemize}
+%	\item blah blah\\
+%	\medskip
+%	\item blah blah blah\\
+%	\medskip
+%	\item blah
+%	\end{itemize}
+%	\end{body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% References
+%\header{References}
+
+%\begin{body}
+%	\vspace{14pt}
+%	\href{http://www.fsl.cs.sunysb.edu/~ezk}{Dr. Erez Zadok}
+%(e-mail:~\href{mailto:ezk@cs.stonybrook.edu}{ezk[at]cs.stonybrook.edu}; phone:~phone number)
+%\begin{itemize}
+%    \item Associate Professor,
+%        \href{http://cs.stonybrook.edu}{Computer Science Department}\\
+%        \href{http://www.stonybrook.edu}{Stony Brook University}
+%\end{itemize}~
+
+%	\href{Person's URL if any}{Title. Name}
+%(e-mail:~\href{mailto:emailid}{how to display email id}; phone:~phone number)
+%
+%\begin{itemize}
+%    \item Title (eg. Assistant Professor, Member of Technical Staff, etc),
+%        \href{department url}{Department},\\
+%        \href{institute url}{institute}
+%\end{itemize}~
+%	\end{body}
+\end{document}
